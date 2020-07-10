@@ -8,7 +8,7 @@ int bpw (int a, int n)
 		return (bpw(a, n - 1) * a) % mod;
 	else
     {
-		int b = bpw(a, n/2);
+		int b = bpw(a, n / 2);
 		return (1ll * b * b) % mod;
 	}
 }
